@@ -9,7 +9,7 @@ This project was originally created as part of a university assignment and later
 
 ##  Live Site
 
-🔗 [Click here to view the live site](https://lucasjurgec.github.io/sweet-life/)  
+🔗 [Click here to view the live site](https://lucasjurgec.github.io/SweetLife_Website/index.html)  
 
 ---
 
