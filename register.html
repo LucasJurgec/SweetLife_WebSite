@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies document type and language -->
+<head>
+	<!-- Metadata and page setup -->
+	<meta charset="UTF-8"> <!-- Sets character encoding -->
+	<meta name="description" content="Register page"> <!-- Meta description for SEO -->
+	<meta name="keywords" content="HTML5, tags"> <!-- Keywords for SEO -->
+	<meta name="author" content="Lucas Jurgec"> <!-- Author name -->
+	<title>Register Page</title> <!-- Title displayed in browser tab -->
+
+	<link rel="stylesheet" href="css/styles.css"> <!-- Links to external CSS file -->
+	<script src="js/script.js" defer></script> <!-- Links to JavaScript file, defer delays execution until after HTML is parsed -->
+</head>
+<body>
+	<header>
+		<h1 class="title">Sweet Life</h1> <!-- Main site heading -->
+
+		<nav> <!-- Navigation menu -->
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/index.html">Home</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/order.html">Order</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/register.html" class="active">Register</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/features.html">Features</a>
+		</nav>
+	</header>
+
+	<main> <!-- Main page content -->
+		<section> <!-- Registration introduction -->
+			<h2 class="headercentre">Registration</h2>
+			<p class="centre">If you would like to register an account with us please fill out the fields below</p>
+		</section>
+
+		<section>
+			<form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post"> <!-- Form posts user input to server -->
+
+				<fieldset> <!-- User login section -->
+					<legend class="headercentre">Create User Login</legend>
+
+					<label for="username">Username:</label> <!-- Textbox -->
+					<input type="text" id="username" name="username"><br><br>
+
+					<label for="password">Password:</label> <!-- Password field -->
+					<input type="password" id="password" name="password"><br>
+				</fieldset>
+
+				<fieldset> <!-- Personal user information -->
+					<legend class="headercentre">User Details</legend>
+
+					<label for="firstname">First name:</label> <!-- Textbox -->
+					<input type="text" id="firstname" name="firstname"><br><br>
+
+					<p>Gender:</p> <!-- Gender radio buttons -->
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label><br>
+
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label><br>
+
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label><br><br>
+
+					<label for="email">Email:</label> <!-- Textbox -->
+					<input type="text" id="email" name="email">
+				</fieldset>
+
+				<fieldset> <!-- Extra user preferences -->
+					<legend class="headercentre">Extra Info</legend>
+
+					<p>What Toppings Do You Like?:</p> <!-- Checkbox inputs -->
+					<input type="checkbox" id="sprinkles" name="toppings" value="Sprinkles">
+					<label for="sprinkles">Sprinkles</label><br>
+
+					<input type="checkbox" id="chocolateChips" name="toppings" value="Chocolate Chips">
+					<label for="chocolateChips">Chocolate Chips</label><br>
+
+					<input type="checkbox" id="caramelDrizzle" name="toppings" value="Caramel Drizzle">
+					<label for="caramelDrizzle">Caramel Drizzle</label><br>
+
+					<input type="checkbox" id="marshmallows" name="toppings" value="Marshmallows">
+					<label for="marshmallows">Marshmallows</label><br><br>
+
+					<label for="fav">Favourite Ice Cream Flavour:</label><br> <!-- Dropdown menu -->
+					<select id="fav" name="fav">
+						<option value="" selected disabled>Please Select</option> <!-- Default disabled option -->
+						<option value="Strawberry Swirl">Strawberry Swirl</option>
+						<option value="Choco-Mint Crunch">Choco-Mint Crunch</option>
+						<option value="Salted Caramel Fudge">Salted Caramel Fudge</option>
+						<option value="Bubblegum Blast">Bubblegum Blast</option>
+						<option value="Cookies & Cream">Cookies & Cream</option>
+						<option value="Rainbow Sherbet">Rainbow Sherbet</option>
+						<option value="Honeycomb Cruch">Honeycomb Cruch</option>
+						<option value="Peanut Butter Choc Swirl">Peanut Butter Choc Swirl</option>
+						<option value="Mango Sorbet">Mango Sorbet</option>
+						<option value="Cookie Dough">Cookie Dough</option>
+						<option value="Vanilla">Vanilla</option>
+						<option value="Banana Choc">Banana Choc</option>
+					</select><br><br>
+				</fieldset>
+
+				<div class="button"> <!-- Submit and reset buttons -->
+					<input type="submit" value="Register"> <!-- Submits form -->
+					<input type="reset" value="Reset"> <!-- Clears all form fields -->
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer> <!-- Page footer -->
+		<p>&copy; 2025 Lucas Jurgec. All rights reserved</p>
+		<p>Web Development Assignment 1</p>
+		<p>Made by Lucas Jurgec</p>
+	</footer>
+</body>
+</html>

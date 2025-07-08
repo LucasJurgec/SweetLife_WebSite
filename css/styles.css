@@ -1,0 +1,167 @@
+/*
+
+filename: styles.css
+
+author: Lucas Jurgec
+
+created: 02/05/2025
+
+last modified: 20/05/2025
+
+description: styling html webpage
+
+*/
+
+/* General */
+
+.centre {
+	text-align: center; /* Center-aligns text */
+}
+
+.listcentre {
+	text-align: center; /* Center-aligns list items */
+	list-style-type: none; /* Removes default bullets */
+	padding: 0; /* Removes padding */
+}
+
+.headercentre {
+	text-align: center; /* Center-aligns headers */
+	color: #FF69B4; /* Pink text color */
+	font-family: cursive; /* Cursive font */
+}
+
+body {
+	background: linear-gradient( #FFFDD0, #ffe4e1); /* Gradient background for whole page */
+}
+
+main {
+	background: linear-gradient( #FFFDD0, #ffe4e1); /* Gradient background for main content */
+}
+
+fieldset {
+	border: none; /* Removes border around fieldsets */
+	margin-bottom: 20px; /* Adds space between fieldsets */
+	text-align: center; /* Center-aligns contents */
+}
+
+.button {
+	text-align: center; /* Centers the submit/reset buttons */
+}
+
+/* header */
+
+header {
+	background-color: #FFFDD0; /* Pale yellow background for header */
+}
+
+.title {
+	font-family: cursive; /* Cursive font for title */
+	font-size: 3em; /* Large text size */
+	color: #FF69B4; /* Pink text color */
+	text-align: center; /* Center-aligns title */
+	margin-top: 20px; /* Adds spacing at the top */
+	text-shadow: 2px 2px #fff0f5; /* Light pink shadow for soft effect */
+}
+
+nav {
+  padding: 1em; /* Padding around nav */
+  font-family: 'Comic Sans MS', cursive; /* Fun, casual font */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-around; /* Evenly spaces nav links */
+  border-bottom: 5px dotted #FFC0CB; /* Decorative pink dotted bottom border */
+}
+
+nav a {
+  color: #FF69B4; /* Pink text */
+  text-decoration: none; /* Removes underline */
+  padding: 0.5em 1em; /* Padding inside links */
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.6s ease; /* Smooth hover transition */
+  font-weight: bold; /* Bold text */
+}
+
+nav a:hover {
+  background-color: #ffcce6; /* Light pink background on hover */
+}
+
+nav a.active {
+  background-color: #ffe0ef; /* Slightly different pink for active tab */
+  color: #d63384; /* Darker pink text */
+  font-weight: bolder; /* Extra bold to highlight active */
+}
+
+/* footer */
+
+footer {
+	text-align: center; /* Center-aligns footer text */
+	background-color: #ffe4e1; /* Light pink background */
+	padding: 1.5em 1em; /* Spacing around content */
+	font-family: sans-serif; /* Clean, readable font */
+	font-size: 0.95em; /* Slightly smaller text */
+	color: #4d4d4d; /* Dark grey text */
+	border-top: 4px dotted #ffc0cb; /* Decorative top border */
+	margin-top: 2em; /* Space above footer */
+}
+
+/* index page */
+
+#location {
+	display: flex; /* Flexbox layout for location images */
+	justify-content: center; /* Centers the items horizontally */
+	gap: 40px; /* Spacing between locations */
+	flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+#locationheader {
+	font-family: cursive; /* Cursive font */
+	color: #FF69B4; /* Pink text */
+	margin: 30px 0 20px; /* Top and bottom spacing */
+	text-align: center; /* Center-aligns header */
+}
+
+.locationdiv {
+  text-align: center; /* Center-aligns text and image */
+}
+
+.locationdiv h4 {
+	color: #FF69B4; /* Pink text */
+	font-family: cursive; /* Cursive font */
+}
+
+.locationimg {
+	width: 600px; /* Image width */
+	height: auto; /* Maintains aspect ratio */
+	border-radius: 10px; /* Slightly rounded corners */
+}
+
+#h4cookie {
+	text-align: right; /* Right-aligns heading */
+	color: #FF69B4; /* Pink text */
+	font-family: cursive; /* Cursive font */
+}
+
+#h4vanilla {
+	text-align: left; /* Left-aligns heading */
+	color: #FF69B4;
+	font-family: cursive;
+}
+
+#h4banana {
+	text-align: center; /* Center-aligns heading */
+	color: #FF69B4;
+	font-family: cursive;
+}
+
+#imgcookie, #imgvanilla, #imgbanana {
+	width: 100%; /* Full width inside parent */
+	height: auto; /* Maintains aspect ratio */
+}
+
+#flex {
+	display: flex; /* Flex layout for flavour section */
+}
+
+.divfav {
+	width: 33%; /* Each flavour div takes one-third of the space */
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies document type and language -->
+<head>
+	<!-- Metadata and page setup -->
+	<meta charset="UTF-8"> <!-- Sets character encoding -->
+	<meta name="description" content="Order page"> <!-- Meta description for SEO -->
+	<meta name="keywords" content="HTML5, tags"> <!-- Keywords for SEO -->
+	<meta name="author" content="Lucas Jurgec"> <!-- Author name -->
+	<title>Order Page</title> <!-- Title displayed in browser tab -->
+
+	<link rel="stylesheet" href="css/styles.css"> <!-- Links to external CSS file -->
+	<script src="js/script.js" defer></script> <!-- Links to JavaScript file, defer delays execution until after HTML is parsed -->
+</head>
+<body>
+	<header>
+		<h1 class="title">Sweet Life</h1> <!-- Main site heading -->
+
+		<nav> <!-- Navigation menu -->
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/index.html">Home</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/order.html" class="active">Order</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/register.html">Register</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/features.html">Features</a>
+		</nav>
+	</header>
+
+	<main> <!-- Main page content -->
+		<section> <!-- Introduction -->
+			<h2 class="headercentre">Place Order</h2>
+			<p class="centre">If you would like to place an order with us please fill out the fields below</p>
+		</section>
+
+		<section>
+			<form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post"> <!-- Form for placing order -->
+
+				<fieldset> <!-- Delivery or Pickup selection -->
+					<legend class="headercentre">Delivery or Pickup</legend>
+
+					<input type="radio" id="delivery" name="dpu" value="delivery"> <!-- Radio button: delivery -->
+					<label for="delivery">Delivery</label><br>
+
+					<input type="radio" id="pickup" name="dpu" value="pickup"> <!-- Radio button: pickup -->
+					<label for="pickup">Pick Up</label><br><br>
+
+					<div id="deliverysection"> <!-- Delivery details -->
+						<label for="deladdress">Delivery address:</label>
+						<input type="text" id="deladdress" name="deladdress"><br><br>
+
+						<div id="bsamedsection"> <!-- Checkbox for billing address same as delivery -->
+							<input type="checkbox" id="bsamed" name="bsamed" value="bsamed">
+							<label for="bsamed">Billing address same as delivery address</label><br><br>
+						</div>
+					</div>
+
+					<label for="biladdress">Billing address:</label> <!-- Billing address input -->
+					<input type="text" id="biladdress" name="biladdress"><br><br>
+
+					<label for="postcode">Postcode:</label> <!-- Postcode input -->
+					<input type="text" id="postcode" name="postcode"><br><br>
+				</fieldset>
+
+				<fieldset> <!-- Contact information -->
+					<legend class="headercentre">Contact Info</legend>
+
+					<label for="phonenum">Phone Number:</label> <!-- Phone number input -->
+					<input type="text" id="phonenum" name="phonenum"><br><br>
+
+					<label for="email">Email:</label> <!-- Email input -->
+					<input type="text" id="email" name="email">
+				</fieldset>
+
+				<fieldset> <!-- Payment method selection -->
+					<legend class="headercentre">Pay Online or On Pick Up</legend>
+
+					<input type="radio" id="online" name="payment" value="online"> <!-- Radio button: online payment -->
+					<label for="online">Online</label><br>
+
+					<input type="radio" id="paypickup" name="payment" value="paypickup"> <!-- Radio button: pay on pickup -->
+					<label for="paypickup">Pick Up</label><br>
+				</fieldset>
+
+				<fieldset id="cardsection"> <!-- Credit card information -->
+					<legend class="headercentre">Credit Card</legend>
+
+					<label for="cardtype">Card Type:</label> <!-- Dropdown for card type -->
+					<select id="cardtype" name="cardtype">
+						<option value="">Select card type</option>
+						<option value="visa">Visa</option>
+						<option value="mastercard">MasterCard</option>
+						<option value="amex">American Express</option>
+					</select><br><br>
+
+					<label for="cardnum">Card Number:</label> <!-- Credit card number -->
+					<input type="text" id="cardnum" name="cardnum"><br><br>
+
+					<label for="exp">EXP:</label> <!-- Expiration date -->
+					<input type="text" id="exp" name="exp"><br><br>
+
+					<label for="cvc">CVC:</label> <!-- CVC input -->
+					<input type="text" id="cvc" name="cvc"><br><br>
+				</fieldset>
+
+				<div class="button"> <!-- Form action buttons -->
+					<input type="submit" value="Place Order"> <!-- Submits the form -->
+					<input type="reset" value="Reset"> <!-- Clears all form fields -->
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer> <!-- Page footer -->
+		<p>&copy; 2025 Lucas Jurgec. All rights reserved</p>
+		<p>Web Development Assignment 1</p>
+		<p>Made by Lucas Jurgec</p>
+	</footer>
+</body>
+</html>

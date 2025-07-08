@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies document type and language -->
+<head>
+	<!-- Metadata and page setup -->
+	<meta charset="UTF-8"> <!-- Sets character encoding -->
+	<meta name="description" content="Home page"> <!-- Meta description for SEO -->
+	<meta name="keywords" content="HTML5, tags"> <!-- Keywords for SEO -->
+	<meta name="author" content="Lucas Jurgec"> <!-- Author name -->
+	<title>Home Page</title> <!-- Title displayed in browser tab -->
+  
+	<link rel="stylesheet" href="css/styles.css"> <!-- Links to external CSS file -->
+	<script src="js/script.js" defer></script> <!-- Links to JavaScript file, defer delays execution until after HTML is parsed -->
+</head>
+<body>
+	<header>
+		<h1 class="title">Sweet Life</h1> <!-- Main site heading -->
+		
+		<nav> <!-- Navigation menu -->
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/index.html" class="active">Home</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/order.html">Order</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/register.html">Register</a>
+			<a href="https://mercury.swin.edu.au/cos10005/s105923018/assignment02/features.html">Features</a>
+		</nav>
+	</header>
+
+	<main> <!-- Main page content -->
+		<section> <!-- About Us section -->
+			<h3 class="headercentre">About Us</h3>
+			<p class="centre">
+				Sweet Life is a local, family-owned ice cream shop<br>
+				with two locations: Brunswick and Williamstown.<br>
+				We've been serving the Brunswick community for nearly 20 years,<br>
+				and have recently expanded our ice cream delights to Williamstown.<br>
+				We look forward to continuing to provide delicious and affordable<br>
+				ice cream for everyone to enjoy.<br>
+			</p>
+		</section>
+		
+		<section> <!-- Signature flavours section -->
+			<h3 class="headercentre">Our Signature Flavours</h3>
+			
+			<div id="flex"> <!-- Flex container for flavour display -->
+				<div class="divfav"> <!-- Individual flavour block -->
+					<h4 id="h4vanilla">Vanilla</h4> <!-- Flavour name -->
+					<img src="images/vanilla.jpg" id="imgvanilla" alt="Vanilla Ice cream Image"> <!-- Flavour image -->
+				</div>
+				<div class="divfav">
+					<h4 id="h4banana">Banana Choc</h4>
+					<img src="images/bananachoc.jpg" id="imgbanana" alt="Banana Choc Ice cream Image">
+				</div>
+				<div class="divfav">
+					<h4 id="h4cookie">Cookie Dough</h4>
+					<img src="images/cookiedough.jpg" id="imgcookie" alt="Cookie Dough Ice cream Image">
+				</div>
+			</div>
+		</section>
+		
+		<section> <!-- Other flavours section -->
+			<h3 class="headercentre">Our Other Ice Cream Flavours</h3>
+			<ul class="listcentre"> <!-- Unordered list of additional flavours -->
+				<li>Strawberry Swirl</li>
+				<li>Choco-Mint Crunch</li>
+				<li>Salted Caramel Fudge</li>
+				<li>Bubblegum Blast</li>
+				<li>Cookies & Cream</li>
+				<li>Rainbow Sherbet</li>
+				<li>Honeycomb Cruch (only available at brunswick)</li>
+				<li>Peanut Butter Choc Swirl (only available at brunswick)</li>
+				<li>Mango Sorbet (only available at Williamstown)</li>
+			</ul>
+		</section>
+		
+		<section> <!-- Locations section -->
+			<h3 id="locationheader">Locations</h3>
+			<div id="location"> <!-- Flexbox container for shop locations -->
+				<div class="locationdiv"> <!-- Brunswick location -->
+					<h4>Brunswick</h4>
+					<a href="https://www.google.com/maps/place/Pantheon+Cakes/@-37.765797,144.9595821,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad6434d5a244507:0xe23c1c0782f25958!8m2!3d-37.765797!4d144.962157!16s%2Fg%2F1v2jd190?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank"> <!-- Will open new tab with store location on google maps, these are just random stores -->
+						<img src="images/brunswick.png" class="locationimg" alt="Brunswick Shop Location">
+					</a>
+				</div>
+				<div class="locationdiv"> <!-- Williamstown location -->
+					<h4>Williamstown</h4>
+					<a href="https://www.google.com/maps/place/Will's+Batch+Ice+Cream/@-37.8617189,144.8998813,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad667b0bddf9153:0xf13f96663ebc132e!8m2!3d-37.8617189!4d144.9024562!16s%2Fg%2F11vm5txg8j?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
+						<img src="images/williamstown.png" class="locationimg" alt="Williamstown Shop Location">
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer> <!-- Page footer -->
+		<p>&copy; 2025 Lucas Jurgec. All rights reserved</p>
+		<p>Web Development Assignment 2</p>
+		<p>Made by Lucas Jurgec</p>
+	</footer>
+</body>
+</html>
